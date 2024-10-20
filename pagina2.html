@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Laboratorio 6</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+     <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Index</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+            <a class="nav-link" href="pagina1.html">Pagina 1 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="pagina2.html">Pagina 2</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="pagina3.html">Pagina 3</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    <h1>Recetario</h1>
+    <!-- Sección de tarjetas con recetas -->
+    <div class="container mt-5">
+        <div class="row">
+        <!-- Primera Receta -->
+        <div class="col-md-4">
+            <div class="card">
+            <img src="image/ensalada.jfif" class="card-img-top" alt="Receta 1" data-toggle="modal" data-target="#receta1Modal">
+            <div class="card-body">
+                <h5 class="card-title">Ensalada de Quinoa</h5>
+                <p class="card-text">Una deliciosa y saludable ensalada de quinoa con vegetales frescos y aliño de limón.</p>
+            </div>
+            </div>
+        </div>
+    
+        <!-- Segunda Receta -->
+        <div class="col-md-4">
+            <div class="card">
+            <img src="image/pizza.jfif" class="card-img-top" alt="Receta 2" data-toggle="modal" data-target="#receta2Modal">
+            <div class="card-body">
+                <h5 class="card-title">Pizza Margherita</h5>
+                <p class="card-text">Clásica pizza italiana con mozzarella fresca, albahaca y tomate.</p>
+            </div>
+            </div>
+        </div>
+    
+        <!-- Tercera Receta -->
+        <div class="col-md-4">
+            <div class="card">
+            <img src="image/tiramisu.jfif" class="card-img-top" alt="Receta 3" data-toggle="modal" data-target="#receta3Modal">
+            <div class="card-body">
+                <h5 class="card-title">Tiramisú</h5>
+                <p class="card-text">Un clásico postre italiano con capas de mascarpone y café.</p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <!-- Modal para la Receta 1 -->
+    <div class="modal fade" id="receta1Modal" tabindex="-1" aria-labelledby="receta1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="receta1ModalLabel">Ensalada de Quinoa</h5>
+            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <img src="image/ensalada.jfif" class="img-fluid" alt="Ensalada de Quinoa">
+            <p class="mt-3">La quinoa, rica en proteínas, se combina con una mezcla de vegetales frescos para crear esta ensalada perfecta para cualquier comida.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <!-- Modal para la Receta 2 -->
+    <div class="modal fade" id="receta2Modal" tabindex="-1" aria-labelledby="receta2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="receta2ModalLabel">Pizza Margherita</h5>
+            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <img src="image/pizza.jfif" class="img-fluid" alt="Pizza Margherita">
+            <p class="mt-3">La pizza Margherita es un platillo clasico, sencillo y delicioso. Con una base de masa crujiente, salsa de tomate, mozzarella fresca y albahaca, esta receta te llevará al pasado de Italia.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <!-- Modal para la Receta 3 -->
+    <div class="modal fade" id="receta3Modal" tabindex="-1" aria-labelledby="receta3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="receta3ModalLabel">Tiramisú</h5>
+            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <img src="image/tiramisu.jfif" class="img-fluid" alt="Tiramisú">
+            <p class="mt-3">El tiramisú, un postre de origen italiano, combina capas de un bizcocho bañado en café con una delicioso crema de mascarpone y cacao en polvo.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      
+</body>
+</html>
